@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="options">
+            <button class="backBtn">
+                <img src="img/left.png" alt="">
+            </button>
+            <button class="menu">
+                <img src="img/menu.png" alt="">
+            </button>
+        </div>
+        <div class="song-container">
+            <div class="cover">
+                <img src="img/468-thumbnail.png" alt="">
+            </div>
+            <h3 class="song-name">Despacito</h3>
+            <span class="singer-name">Louis Fonci</span>
+            <input type="range" value="0" id="progress">
+            <audio controls id="audio">
+                <source src="audios/huzoor_meri.mp3">
+            </audio>
+        </div>
+        <div class="options-container">
+            <button class="previous">
+                <img src="img/previous.png" alt="">
+            </button>
+            <button class="pause" onclick="playOrPauseAudio()">
+                <img src="img/pause.png" alt="">
+            </button>
+            <button class="next">
+                <img src="img/next.png" alt="">
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

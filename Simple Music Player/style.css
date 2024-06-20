@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #004c4c;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #b2d8d8;
+}
+
+.options {
+    width: 25rem;
+    margin: 0px 8px 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.backBtn,
+.menu {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow: -2px 2px 2px #8fc2c2;
+}
+
+.menu img {
+    width: 80%;
+}
+
+.song-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 95%;
+}
+
+.cover {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.song-name {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.singer-name {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#progress {
+    -webkit-appearance: none;
+    height: 6px;
+    background: #004c4c;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.3rem;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #004c4c;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 4px solid #fff;
+}
+
+.options-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.options-container button {
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+    padding: 1.4rem;
+    box-shadow: -2px 2px 2px #8fc2c2;
+}
+
+.options-container .pause {
+    width: 5rem;
+    height: 5rem;
+}

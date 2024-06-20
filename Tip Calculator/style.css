@@ -1,0 +1,87 @@
+* {
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8990ec;
+
+
+}
+
+#main {
+    background-color: #272639;
+    border-radius: 1rem;
+    width: 400px;
+    height: 550px;
+    padding: 1rem;
+    margin: 35px auto;
+
+}
+
+#top-container {
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.input-container {
+    background-color: #353959;
+    border-radius: 1.2rem;
+    padding: 6px;
+    margin: 8px 0px;
+    align-items: center;
+}
+
+#billTotalInput,
+#tipInput {
+    background: none;
+    outline: none;
+    padding: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+#top-container span {
+    font-size: 1.2rem;
+}
+
+#bottom-container {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.controls {
+    margin-top: 25px;
+}
+
+.controls button {
+    border-radius: 50%;
+    font-size: 15px;
+    color: black;
+    border: none;
+    background-color: #8990ec;
+    width: 26px;
+    height: 26px;
+}
+
+#numberOfPeople {
+    margin: 0px 6px;
+}
+
+.total {
+    display: flex;
+    margin: 10px 4px;
+    font-size: 2rem;
+
+}
+
+.total div {
+    margin-left: 4px
+}

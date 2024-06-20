@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+}
+
+.menu {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.p1Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#p1Name,
+#p2Name {
+    font-size: 2rem;
+}
+
+#p1 {
+    width: 120px;
+    height: 140px;
+}
+
+#p2 {
+    width: 150px;
+    height: 150px;
+}
+
+.playerControl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.attackDiv,
+.healDiv {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+
+#attack {
+    background-color: #ffff33;
+}
+
+#heal {
+    background-color: #6ffbeb;
+}
+
+#play {
+    padding: 18px 22px;
+    border-radius: 16px;
+    background-color: #2fda2f;
+    border: 1px solid black;
+}
+
+#reset {
+    padding: 14px 20px;
+    border-radius: 15px;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+#p1Health,
+#p2Health {
+    font-size: 2.8rem;
+}
+
+.resultContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+#result {
+    font-size: 3rem;
+    color: #27ec27;
+    margin-bottom: 8px;
+}
+
+audio {
+    display: none;
+}

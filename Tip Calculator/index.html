@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet" />
+    <title>Advanced Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>Tip Calculator</h1>
+        <div class="container" id="top-container">
+            <div class="title">Bill Total</div>
+            <div class="input-container">
+                <span>$</span>
+                <input onkeyup="calculateBill()" id="billTotalInput" type="text" placeholder="0.00" />
+            </div>
+            <div class="title">Tip</div>
+            <div class="input-container">
+                <span>%</span>
+                <input onkeyup="calculateBill()" id='tipInput' type="text" placeholder="0" />
+            </div>
+        </div>
+        <div class="container" id="bottom-container">
+            <div class="splitContainer">
+                <div class="title">People</div>
+                <div class="controls">
+                    <span class="button-container">
+                        <button class="splitButton" onclick="increasePeople()">
+                            <span class="buttonText">+</span>
+                        </button>
+                    </span>
+                    <span id="numberOfPeople">1</span>
+                    <span class="button-container">
+                        <button class="splitButton" onclick="decreasePeople()">
+                            <span class="buttonText">-</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="total-container">
+                <div class="title">Total Per Person</div>
+                <div class="total">
+                    <span>$</span>
+                    <div id="perPersonTotal">0.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
